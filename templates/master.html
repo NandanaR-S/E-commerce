@@ -1,0 +1,128 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion Hub</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static '/css/home.css'%}" />
+    {% block styles %} {% endblock %}
+  </head>
+  <body>
+    <!-- NAVBAR START -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">LOGO</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">MEN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">WOMEN</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">KIDS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT US</a>
+          </li>
+        </ul>
+        <form class="form-inline">
+          <input
+            class="form-control search-input"
+            type="search"
+            placeholder="Search for products here..."
+            aria-label="Search"
+          />
+          <div class="icon">🔍</div>
+          <div class="icon">👤</div>
+          <div class="icon">❤️</div>
+          <div class="icon">🛒</div>
+        </form>
+      </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- NAVBAR END -->
+
+    {% block content %} {% endblock %}
+
+    <!-- FOOTER START  -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- Info -->
+          <div class="col-md-3">
+            <h5>Info</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Who We Are</a></li>
+              <li><a href="#">Join Our Team</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+              <li><a href="#">We Respect Your Privacy</a></li>
+              <li><a href="#">Fees & Payments</a></li>
+              <li><a href="#">Returns & Refunds Policy</a></li>
+              <li><a href="#">Promotions Terms & Conditions</a></li>
+            </ul>
+          </div>
+          <!-- Help -->
+          <div class="col-md-3">
+            <h5>Help</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Track Your Order</a></li>
+              <li><a href="#">Frequently Asked Questions</a></li>
+              <li><a href="#">Returns</a></li>
+              <li><a href="#">Cancellations</a></li>
+              <li><a href="#">Payments</a></li>
+              <li><a href="#">Customer Care</a></li>
+              <li><a href="#">How Do I Redeem My Coupon</a></li>
+            </ul>
+          </div>
+          <!-- Shop by -->
+          <div class="col-md-3">
+            <h5>Shop by</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">Kids</a></li>
+              <li><a href="#">Indie</a></li>
+              <li><a href="#">Stores</a></li>
+              <li><a href="#">New Arrivals</a></li>
+              <li><a href="#">Brand Directory</a></li>
+            </ul>
+          </div>
+          <!-- Follow us -->
+          <div class="col-md-3">
+            <h5>Follow us</h5>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+              <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+              <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+              <a href="#"><i class="fab fa-pinterest"></i> Pinterest</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END  -->
+  </body>
+</html>
